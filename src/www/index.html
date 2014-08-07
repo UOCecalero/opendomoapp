@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<!--
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+    
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+        <!--
+        <link rel="stylesheet" type="text/css" href="css/index.css" />
+        -->
+        <link rel="stylesheet" type="text/css" href="css/estilos.css" />
+        <title> Opendomo </title>
+    </head>
+    
+    <body>
+    	
+        <div id="menu_lateral">
+    	 
+                <nav id="menu">
+                    <ul>
+                        <li>
+                            <span>
+                                <td>
+                                <select name="port" id="opciones"></select>
+                                <span> <a href="javascript: addbutton();"></a> Add button</span>
+                            </td>
+                            
+                        </li>
+                        
+                        <li> <a href="javascript: removebutton();"></a> Remove button </li>
+                    </ul>
+     
+                </nav>
+                 
+    	</div>
+    	
+    	<div id="settings">
+            
+        </div>
+        
+        
+    
+        <div id="menu_principal">
+            <header id="cabecera">
+                
+					<a href="javascript: menu('derecha');"><img class="btniz" src="img/botonmenu.png"  alt="menubtn" height="30" width="30"> </a>
+					<img class="btncnt"src="img/logoopen.png" alt="Opendomo"  height="30" width="150" >
+					<a href="javascript: menu('izquierda');"><img class="btnder"src="img/settings.png"  alt="settingsbtn" height="30" width="30"> </a>
+			
+            </header>
+		
+        
+            <div id="cuerpo">
+				           
+            
+                    <section id="loginbox">
+                        <form name="login_form">
+                            
+                            <!-- Las varaibles user, password y URL se definen internamente de momento
+                            
+                            <!-- Falta acotar los input type para que solo acepten valores validos
+                            
+                            <p> User:
+                            <input type="text" name="user"  id="user" placeholder=" nombre de usuario "  required> </p> </BR>
+                                
+                            <p> Password:
+                            <input type="password" name="password" id="password" placeholder= "password" required> </p> <BR>
+                                
+                            <p> URL:
+                            <input type="text" name="url" id="url" required> </p> <BR> -->
+                            
+                            
+                            <p> Image:
+                            <input type="file" name="planos" id="planos"> </p> <BR>
+                                
+                            <p><input type="button" name="botonlogin" class="btnlgin"
+                                    value="Login" onclick="logar()"></p>
+                    
+                        </form>
+                    </section>
+            
+        </div>
+            <footer id="pie">
+                
+            </footer>
+    
+        </div>
+        
+        <div id="cargando">
+            
+            <div>
+                <img src="img/ajax-loader2.gif" alt="Barra de carga" height="60" width="60">
+            </div>
+            
+        </div>
+        
+        
+        <script type="text/javascript" src="js/fastclick.js"></script>
+        <script type="text/javascript" src="js/functions.js"></script>
+        <script type="text/javascript" src="js/iscroll-zoom.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+       <!-- <script type="text/javascript">
+        
+        <script type="text/javascript" src="phonegap.js"></script>
+        app.initialize();
+        </script> -->
+       
+    </body>
+</html>

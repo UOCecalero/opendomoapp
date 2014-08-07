@@ -1,0 +1,90 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	}
+	
+body {
+	font-family:'HelveticaNeue-Light', 'HelveticaNeue', Helvetica, Arial, sans-serif;
+	height:100%;
+   width:100%;
+	position: fixed;
+}
+
+
+/* Realmente esto con el código javascript no es necesario
+
+body > div {
+	position: absolute;
+	width: 100%;
+	height: 100%;	
+	}
+*/
+
+
+#cabecera {
+	position:absolute; z-index:2;
+	top:0; left:0;	
+	background-color:white;
+   width:100%;
+   height: 70px;
+   border-bottom: 5px solid #043E95;
+   text-align: center;
+	}
+	
+.btniz { float: left; }
+.btnder { float: right; }
+.btncnt { padding-left: 100px; }
+	
+
+#menu_principal {
+	background-color: #999999;
+	clear: both;	
+	}
+	
+	
+/* Estilo de capa general */ 
+
+.page { 
+
+position: absolute; 
+top: 0; 
+left: 0; 
+width: 100%; 
+height: 100%;
+
+-webkit-transform: translate3d(0, 0, 0); 
+transform: translate3d(0, 0, 0); 
+} 
+
+
+
+/* Estilo de capa izquierda. Estas clases solo afectan clases con las 2 */ 
+
+.page.left {
+-webkit-transform: translate3d(-90%, 0, 0); 
+transform: translate3d(-90%, 0, 0); 
+} 
+
+/* Estilo de capa central */ 
+
+.page.center { 
+-webkit-transform: translate3d(0, 0, 0); 
+transform: translate3d(0, 0, 0); 
+} 
+
+/* Estilo de capa derecha */ 
+
+.page.right { 
+-webkit-transform: translate3d(90%, 0, 0); 
+transform: translate3d(90%, 0, 0); 
+} 
+
+/* Estilo de animación general */ 
+
+.page.transition { 
+-webkit-transition-duration: .15s; 
+transition-duration: .15s; 
+}
+
+	
+	

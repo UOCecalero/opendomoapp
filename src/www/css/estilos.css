@@ -1,0 +1,180 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	}
+	
+body {
+	font-family:'HelveticaNeue-Light', 'HelveticaNeue', Helvetica, Arial, sans-serif;
+	height:100%;
+   width:100%;
+	position: fixed;
+}
+
+
+body > div {
+	position: absolute;
+	width: 100%;
+	height: 100%;	
+	}
+
+#menu_principal {
+	background-color: #999999;
+	}
+
+#cabecera {
+	position:absolute;
+	top:0; left:0;	
+	background-color:white;
+   width:100%;
+   height: 40px;
+   border-bottom: 10px solid #043E95;
+   text-align: center;
+	}
+    
+#cuerpo{
+	position:absolute;
+	top:50px; left:0;
+   width:100%;
+   height:100%;
+   text-align: center;
+	}
+    
+#loginbox{
+    display: block;
+    position: absolute;
+    border: 2px solid #043E95;
+    width: 40%;
+    padding: 20px;
+    margin: 20px 22.5%;
+    background-color: white;
+
+    -moz-border-radius: 5px;
+     -webkit-border-radius: 5px;
+     border-radius: 5px;
+    }
+    
+#pie{
+    display: block;
+    position: absolute;
+    z-index : 2;
+    border-top:2px solid #043E95;
+    width:100%;
+    height: 10%;
+    top: 90%;
+    background-color: white;
+    }
+
+#cargando > div {
+    z-index: 4;
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    }
+
+	
+.btniz { float: left; display:none; }
+.btnder { float: right; display: none; }
+.btncnt { padding-left: 10px; }
+
+/* Estilos para iscroll-zoom*/
+
+#wrapper {
+	position: absolute;
+	z-index: 1;
+	top: 0px;
+	bottom: 0px;
+	left: 0px;
+	width: 100%;
+	background: #ccc;
+	overflow: hidden;
+}
+
+#scroller {
+	position: absolute;
+	z-index: 2;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+	width: 1200px;
+	-webkit-transform: translateZ(0);
+	-moz-transform: translateZ(0);
+	-ms-transform: translateZ(0);
+	-o-transform: translateZ(0);
+	transform: translateZ(0);
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	-webkit-text-size-adjust: none;
+	-moz-text-size-adjust: none;
+	-ms-text-size-adjust: none;
+	-o-text-size-adjust: none;
+	text-size-adjust: none;
+	background: #fff;
+}
+
+	
+/* Estilo de capa general */ 
+
+.page { 
+
+position: absolute; 
+top: 0; 
+left: 0; 
+width: 100%; 
+height: 100%;
+
+-webkit-transform: translate3d(0, 0, 0); 
+transform: translate3d(0, 0, 0); 
+} 
+
+
+
+/* Estilo de capa izquierda */
+
+.page.left {
+-webkit-transform: translate3d(-90%, 0, 0); 
+transform: translate3d(-90%, 0, 0); 
+} 
+
+/* Estilo de capa central */ 
+
+.page.center { 
+-webkit-transform: translate3d(0, 0, 0); 
+transform: translate3d(0, 0, 0); 
+} 
+
+/* Estilo de capa derecha */ 
+
+.page.right { 
+-webkit-transform: translate3d(90%, 0, 0); 
+transform: translate3d(90%, 0, 0); 
+} 
+
+
+/* He creado nuevas clases para poder mover capas de forma total y no parcial, es decir se desplazan 100%. Lo usaremos con cargando */
+
+/* Estilo de capa totalmente a la izquierda */
+
+.page.totalleft {
+-webkit-transform: translate3d(-100%, 0, 0);
+transform: translate3d(-100%, 0, 0);
+}
+
+/* Estilo de capa totalmente a la derecha */
+
+.page.totalright { 
+-webkit-transform: translate3d(100%, 0, 0);
+transform: translate3d(100%, 0, 0); 
+}
+
+
+
+/* Estilo de animación general */ 
+
+.page.transition { 
+-webkit-transition-duration: .15s; 
+transition-duration: .15s; 
+}
+
+	
+	
