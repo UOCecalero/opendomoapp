@@ -17,6 +17,11 @@ body > div {
 	height: 100%;	
 	}
 
+#caja {
+ top: 10%; left:0;
+}
+
+
 #menu_principal {
 	background-color: #999999;
 	}
