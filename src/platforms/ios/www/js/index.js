@@ -1,34 +1,21 @@
 // Declaraciónn de variables globales
-var estado, menulateral, menuprincipal, settings, cargando, cuerpo;
+var estado, menulateral, menuprincipal, settings, cargando, cuerpo, pie, loginbox, botoniz, botonder;
 
 // Guardamos en variables elementos para poder rescatarlos después sin tener que volver a buscarlos
- menuprincipal = document.getElementById("menu_principal"),
- menulateral = document.getElementById("menu_lateral"),
- settings = document.getElementById("settings"),
- cargando = document.getElementById("cargando"),
- pie = document.getElementById ("pie");
-loginbox = document.getElementById("loginbox");
 
+ menuprincipal = ID("menu_principal"),
+ menulateral = ID("menu_lateral"),
+ settings = ID("settings"),
+ cargando = ID("cargando"),
+ pie = ID("pie"),
+ loginbox = ID("loginbox"),
+ botoniz = GC("btniz")[0],
+ botonder = GC("btnder")[0];
 
-// Función para añadir clases css a elementos
-function addClass( classname, element ) {
-    var cn = element.className;
-    if( cn.indexOf( classname ) != -1 ) {
-    	return;
-    }
-    if( cn != '' ) {
-    	classname = ' '+classname;
-    }
-    element.className = cn+classname;
-}
+var user = "user";
+var password = "opendomo";
+var url = "http://local.opendomo.com/";
 
-// Función para eliminar clases css a elementos
-function removeClass( classname, element ) {
-    var cn = element.className;
-    var rxp = new RegExp( "\\s?\\b"+classname+"\\b", "g" );
-    cn = cn.replace( rxp, '' );
-    element.className = cn;
-}
 
 
 window.onload = function() 
@@ -41,97 +28,47 @@ window.onload = function()
 	settings.className = 'page center';
     cargando.className = 'page totalleft';
 	
+    /* Para no tener que introducir las credenciales una y otra vez:
+     var user = ID("user");
+     var password = ID("password");
+     var url = ID("url");
+     */
+
+
 }
-
-	
-	function menu(opcion) 
-	{
-		
-	// Si pulsamos en el botón de "menu" entramos en el if
-	if(opcion=="derecha")
-	{
-		
-		if(estado=="menuprincipal")
-		{			
-			menuprincipal.className = 'page transition right';
-			settings.className = 'page transition right';			
-			estado="menulateral";
-			
-		} else if(estado=="menulateral")
-		{			
-			menuprincipal.className = 'page transition center';
-			settings.className = 'page transition center';
-			estado="menuprincipal";	
-		} 
-
-	// Si pulsamos el botón settings entramos en el elseif	
-	
-	} else if(opcion=="izquierda")
-	
-        {
-			if(estado=="menuprincipal")
-			{
-				menuprincipal.className = 'page transition left';
-				menulateral.className = 'page transition left';
-				estado="settings"
-				
-			} else if(estado=="settings")
-			{	
-				menuprincipal.className = 'page transition center'
-				menulateral.className = 'page transition center';
-				estado="menuprincipal";
-			}
-		
-	
-        }
-	
-
-	
-    }
-
 
 
 //Login
 
 function logar()
 {
-
+// Se muestra el gif de carga y en mensaje en la consola inferior
 cargando.className = 'page center';
-/* Para no tener que introducir las credenciales una y otra vez:
-var user = document.getElementById("user");
-var password = document.getElementById("password");
-var url = document.getElementById("url");
-*/
-var user = "user";
-var password = "opendomo";
-var url = "http://local.opendomo.com";
+log("sending credentials... "+" user: "+user+" password: "+password+" URL: "+url);
+    
+//Se muestran los botones
+    botonder.style.display = "initial";
+    botoniz.style.display = "initial";
 
-pie.innerHTML ="sending credentials... "+" user: "+user+" password: "+password+" URL: "+url;
+//Hace una consulta lsc y a partir de la respuesta crea el menu de puertos.
+    var response = REQ("lsc+");
+        createMenu(response);
+    
+    response = REQ("ver+");
+    log (response);
+
+//Se retira el gif de carga
+cargando.className= 'page totalleft';
+
+//Se carga el plano seleccionado pasando la id del input
+    loadPlano("planos");
+
     
 
-
-
-
-var req = new XMLHttpRequest();
-
- 
-//true > asíncrono (continúa); false > síncrono (espera la respuesta);
-req.open("GET", url, false);
-    req.setRequestHeader("Access-Control-Allow-Origin", url);
-    req.setRequestHeader("Access-Control-Allow-Credentials", "true");
-    req.setRequestHeader("Authorization", "Basic " + btoa(user + ":" + password));
-req.send(null);
-pie.innerHTML =req.readyState+" "+req.status;
-loginbox.innerHTML = req.responseText;
-    alert(req.response);
- 
+    
+    
 /*
 
-
-    
-
-
-    
 req.onreadystatechange = function() {
 
 
@@ -159,10 +96,7 @@ req.onreadystatechange = function() {
     
 
     
-    //La respuesta será un XML que contendrá objetos que podremos mostrar o no por pantalla
-    //var response = req.responseXML;
     
-    cargando.className= 'page totalleft';
 
 }
 
