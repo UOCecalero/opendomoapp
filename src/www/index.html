@@ -23,7 +23,7 @@
         <meta charset="utf-8" />
         <meta name="format-detection" content="telephone=no" />
         <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
-        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height" />
         <!--
         <link rel="stylesheet" type="text/css" href="css/index.css" />
         -->
@@ -32,23 +32,24 @@
     </head>
     
     <body>
-        <div id="caja">
+       <div id="caja">
     	
         <div id="menu_lateral">
-    	 
-                <nav id="menu">
-                    <ul>
-                        <li>
-                            <span>
-                                <td>
-                                <select name="port" id="opciones"></select>
-                                <span> <a href="javascript: addbutton();"></a> Add button</span>
-                            </td>
-                            
-                        </li>
+    	  <header class="cabecera">MENU</header>
+          <nav id="menu">
+                   
+                    <table>
+
+                        <tr>
+                        <td><select name="port" id="opciones"></select> </td>
+                        <td><input type="button" value="Add button" onclick= "addbutton()"></input></td>
+                        </tr>
                         
-                        <li> <a href="javascript: removebutton();"></a> Remove button </li>
-                    </ul>
+                        <tr>
+                        <td><select name="port" id="opciones"></select> </td>
+                        <td><input type="button" value="Remove button" onclick="removebutton()"></input></td>
+                        </tr>
+                    </table>
      
                 </nav>
                  
@@ -61,12 +62,13 @@
         
     
         <div id="menu_principal">
-            <header id="cabecera">
-                
+            <header class="cabecera">
+                <div id="margen">
+                </div>
 					<a href="javascript: menu('derecha');"><img class="btniz" src="img/botonmenu.png"  alt="menubtn" height="30" width="30"> </a>
 					<img class="btncnt"src="img/logoopen.png" alt="Opendomo"  height="30" width="150" >
 					<a href="javascript: menu('izquierda');"><img class="btnder"src="img/settings.png"  alt="settingsbtn" height="30" width="30"> </a>
-			
+                 
             </header>
 		
         
@@ -93,7 +95,7 @@
                             <p> Image:
                             <input type="file" name="planos" id="planos"> </p> <BR>
                                 
-                            <p><input type="button" name="botonlogin" class="btnlgin"
+                            <p><input type="button" name="botonlogin"
                                     value="Login" onclick="logar()"></p>
                     
                         </form>
@@ -113,8 +115,8 @@
             </div>
             
         </div>
-        
-        
+    </div>
+       
         <script type="text/javascript" src="js/fastclick.js"></script>
         <script type="text/javascript" src="js/functions.js"></script>
         <script type="text/javascript" src="js/iscroll-zoom.js"></script>
@@ -124,6 +126,6 @@
         <script type="text/javascript" src="phonegap.js"></script>
         app.initialize();
         </script> -->
-      </div>
+      
     </body>
 </html>

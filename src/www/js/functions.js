@@ -112,7 +112,7 @@ req.setRequestHeader("Authorization", "Basic " + btoa(user + ":" + password));
 //Se manda la petición del recurso a través del objeto req.
 req.send(null);
 
-    
+ 
  //   req.onreadystatechange = function (){
 //Si activas el modo síncrono cuando genera el menu de los botones aun no ha recibido variables y lo deja vacío
    
@@ -141,6 +141,8 @@ function loadPlano (idinput){
         //Lee el archivo como URL, es decir, extrae la rurta.
         lector.readAsDataURL(plano);
         lector.onloadend = function(){
+            
+        /*
             //Creamos el lienzo sobre el cual se dibujará la imagen.
             cuerpo.innerHTML='<div id="wrapper"> <div id="scroller"><canvas id="micanvas" width="1200" height="1200" > You browser doesnt support canvas </canvas> </div></div>';
             
@@ -154,13 +156,12 @@ function loadPlano (idinput){
                                    });
             document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);
             
-            var canvas = document.getElementById('micanvas');
-            
-            
+            var canvas = ID('micanvas');
             var context = canvas.getContext('2d');
             
             //Instanciamos un objeto imagen al que introduciremos la ruta obtenida
             var image = new Image();
+            image.id = "myimg";
             image.src = lector.result;
             //context.clearRect(0, 0, 640, 480);
             //context.save();
@@ -169,6 +170,24 @@ function loadPlano (idinput){
             
             
             //cuerpo.innerHTML= '<img src="'+lector.result+' alt="100%" height=100%">';
+         
+         */
+            
+            
+            
+            //Creamos el div sobre el cual se dibujará la imagen.
+            cuerpo.innerHTML='<div id="wrapper"> <div id="scroller"><img id=miimagen src="'+lector.result+'"> </div></div>';
+            
+            //Aplicamos la librería iscroll-zoom sobre el código HTML creado
+            myScroll = new IScroll('#wrapper', {
+                                   zoom: true,
+                                   scrollX: true,
+                                   scrollY: true,
+                                   mouseWheel: true,
+                                   wheelAction: 'zoom'
+                                   });
+            document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);
+           
         }
         
         //En caso de no haber imagen.
@@ -202,15 +221,61 @@ function createMenu(tx){
             return no;
         }
     }
-
-
-
-
-
-
-
-
-
-
-
 }
+
+//Función para añadir botón
+    function addbutton(){
+        menu('derecha');
+        log("Hold your finger 2sec to place the button");
+        imagen = ID("scroller");
+        imagen.addEventListener('touchstart', tapandhold, false);
+        imagen.addEventListener('touchstart', getMousePosition, false);
+        imagen.addEventListener('touchend', holding = function(){ hold = false; }, false);
+    
+    }
+    
+/*Función para eliminar botón
+    function removebutton(){
+        menu('derecha');
+        log("Click button to remove");
+        imagen = ID("scroller");
+        imagen.addEventListener("click", getMousePosition, false);
+    }
+ 
+ */
+    
+//Función que calcula coordenadas del ratón (dentro de la capa scroller).
+    function getMousePosition(e){
+         coordenadaX = (-myScroll.x)+(e.layerX - pageXOffset);
+         coordenadaY = (-myScroll.y)+(e.layerY - pageYOffset);;
+        log(" CoordenadaX:"+coordenadaX+" CoordenadaY:"+coordenadaY);
+    }
+
+//Función que comprueba si ha sido mantenido durante mas de dos segundos y pinta el interruptor
+//la propiedad touches.length indica cuantos dedos se estan utilizando sino al hacer zoom saltaría
+
+function tapandhold(e){
+    if (e.touches.length == 1){hold = true;} else {hold = false;}
+	setTimeout (function(){if (hold == true){placeButton();}},2000);
+}
+
+
+//Función que añade el botón
+    function placeButton(){
+       
+        object = CE('div','onswitch','botones');
+        AC(imagen,object);
+        object.style.left = coordenadaX+'px';
+        object.style.top = coordenadaY+'px';
+        
+        //Se cancelan los disparadores de eventos y devuelve automáticamente al menú
+        imagen.removeEventListener('touchstart', tapandhold);
+        imagen.removeEventListener('touchstart', getMousePosition);
+        imagen.removeEventListener('touchend', holding);
+        
+        
+    }
+
+
+
+

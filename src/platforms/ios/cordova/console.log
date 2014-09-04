@@ -100,3 +100,327 @@ You could find it at the following address https://developer.apple.com/icloud/do
 
 2014-08-07 19:26:45.268 HelloWorld[6871:70b] Resetting plugins due to page load.
 2014-08-07 19:26:45.300 HelloWorld[6871:70b] Finished load of: file:///Users/Edu/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/ECA8BCE1-9817-42B7-B904-4C28C36F1D7D/HelloWorld.app/www/index.html
+objc[10690]: Class AXEmojiUtilities is implemented in both /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/PrivateFrameworks/AccessibilityUtilities.framework/AccessibilityUtilities and /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/libAXSpeechManager.dylib. One of the two will be used. Which one is undefined.
+2014-08-10 08:57:01.663 HelloWorld[10690:70b] Cannot find executable for CFBundle 0xa3a0220 </Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/AccessibilityBundles/GeoServices.axbundle> (not loaded)
+2014-08-10 08:57:01.682 HelloWorld[10690:70b] Cannot find executable for CFBundle 0xa4b14d0 </Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/AccessibilityBundles/CertUIFramework.axbundle> (not loaded)
+2014-08-10 08:57:01.773 HelloWorld[10690:70b] Multi-tasking -> Device: YES, App: YES
+2014-08-10 08:57:01.781 HelloWorld[10690:70b] Unlimited access to network resources
+2014-08-10 08:57:01.784 HelloWorld[10690:70b] 
+
+Started backup to iCloud! Please be careful.
+Your application might rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines"
+You could find it at the following address https://developer.apple.com/icloud/documentation/data-storage/ .
+
+2014-08-10 08:57:01.929 HelloWorld[10690:70b] Resetting plugins due to page load.
+2014-08-10 08:57:01.974 HelloWorld[10690:70b] Finished load of: file:///Users/Edu/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/ECA8BCE1-9817-42B7-B904-4C28C36F1D7D/HelloWorld.app/www/index.html
+Terminating in response to SpringBoard's termination.
+objc[11018]: Class AXEmojiUtilities is implemented in both /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/PrivateFrameworks/AccessibilityUtilities.framework/AccessibilityUtilities and /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/libAXSpeechManager.dylib. One of the two will be used. Which one is undefined.
+2014-08-10 08:57:32.868 HelloWorld[11018:70b] Cannot find executable for CFBundle 0xa371230 </Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/AccessibilityBundles/CertUIFramework.axbundle> (not loaded)
+2014-08-10 08:57:32.871 HelloWorld[11018:70b] Cannot find executable for CFBundle 0xa3895f0 </Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/AccessibilityBundles/GeoServices.axbundle> (not loaded)
+2014-08-10 08:57:32.902 HelloWorld[11018:70b] Multi-tasking -> Device: YES, App: YES
+2014-08-10 08:57:32.910 HelloWorld[11018:70b] Unlimited access to network resources
+2014-08-10 08:57:32.916 HelloWorld[11018:70b] 
+
+Started backup to iCloud! Please be careful.
+Your application might rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines"
+You could find it at the following address https://developer.apple.com/icloud/documentation/data-storage/ .
+
+2014-08-10 08:57:33.090 HelloWorld[11018:70b] Resetting plugins due to page load.
+2014-08-10 08:57:33.140 HelloWorld[11018:70b] Finished load of: file:///Users/Edu/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/ECA8BCE1-9817-42B7-B904-4C28C36F1D7D/HelloWorld.app/www/index.html
+objc[12815]: Class AXEmojiUtilities is implemented in both /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/PrivateFrameworks/AccessibilityUtilities.framework/AccessibilityUtilities and /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/libAXSpeechManager.dylib. One of the two will be used. Which one is undefined.
+2014-08-10 09:43:59.479 HelloWorld[12815:70b] Cannot find executable for CFBundle 0xa3b2630 </Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/AccessibilityBundles/CertUIFramework.axbundle> (not loaded)
+2014-08-10 09:43:59.485 HelloWorld[12815:70b] Cannot find executable for CFBundle 0xa3c4470 </Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/AccessibilityBundles/GeoServices.axbundle> (not loaded)
+2014-08-10 09:43:59.522 HelloWorld[12815:70b] Multi-tasking -> Device: YES, App: YES
+2014-08-10 09:43:59.534 HelloWorld[12815:70b] Unlimited access to network resources
+2014-08-10 09:43:59.537 HelloWorld[12815:70b] 
+
+Started backup to iCloud! Please be careful.
+Your application might rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines"
+You could find it at the following address https://developer.apple.com/icloud/documentation/data-storage/ .
+
+2014-08-10 09:43:59.744 HelloWorld[12815:70b] Resetting plugins due to page load.
+2014-08-10 09:43:59.804 HelloWorld[12815:70b] Finished load of: file:///Users/Edu/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/ECA8BCE1-9817-42B7-B904-4C28C36F1D7D/HelloWorld.app/www/index.html
+objc[13249]: Class AXEmojiUtilities is implemented in both /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/PrivateFrameworks/AccessibilityUtilities.framework/AccessibilityUtilities and /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/libAXSpeechManager.dylib. One of the two will be used. Which one is undefined.
+2014-08-10 09:44:31.296 HelloWorld[13249:70b] Cannot find executable for CFBundle 0xa5ab220 </Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/AccessibilityBundles/CertUIFramework.axbundle> (not loaded)
+2014-08-10 09:44:31.300 HelloWorld[13249:70b] Cannot find executable for CFBundle 0xa292fc0 </Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/AccessibilityBundles/GeoServices.axbundle> (not loaded)
+2014-08-10 09:44:31.320 HelloWorld[13249:70b] Multi-tasking -> Device: YES, App: YES
+2014-08-10 09:44:31.326 HelloWorld[13249:70b] Unlimited access to network resources
+2014-08-10 09:44:31.328 HelloWorld[13249:70b] 
+
+Started backup to iCloud! Please be careful.
+Your application might rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines"
+You could find it at the following address https://developer.apple.com/icloud/documentation/data-storage/ .
+
+2014-08-10 09:44:31.377 HelloWorld[13249:70b] Resetting plugins due to page load.
+2014-08-10 09:44:31.408 HelloWorld[13249:70b] Finished load of: file:///Users/Edu/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/ECA8BCE1-9817-42B7-B904-4C28C36F1D7D/HelloWorld.app/www/index.html
+objc[13572]: Class AXEmojiUtilities is implemented in both /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/PrivateFrameworks/AccessibilityUtilities.framework/AccessibilityUtilities and /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/libAXSpeechManager.dylib. One of the two will be used. Which one is undefined.
+2014-08-10 09:45:16.752 HelloWorld[13572:70b] Cannot find executable for CFBundle 0xa425700 </Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/AccessibilityBundles/GeoServices.axbundle> (not loaded)
+2014-08-10 09:45:16.759 HelloWorld[13572:70b] Cannot find executable for CFBundle 0xa4464e0 </Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/AccessibilityBundles/CertUIFramework.axbundle> (not loaded)
+2014-08-10 09:45:16.791 HelloWorld[13572:70b] Multi-tasking -> Device: YES, App: YES
+2014-08-10 09:45:16.802 HelloWorld[13572:70b] Unlimited access to network resources
+2014-08-10 09:45:16.806 HelloWorld[13572:70b] 
+
+Started backup to iCloud! Please be careful.
+Your application might rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines"
+You could find it at the following address https://developer.apple.com/icloud/documentation/data-storage/ .
+
+2014-08-10 09:45:17.011 HelloWorld[13572:70b] Resetting plugins due to page load.
+2014-08-10 09:45:17.061 HelloWorld[13572:70b] Finished load of: file:///Users/Edu/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/ECA8BCE1-9817-42B7-B904-4C28C36F1D7D/HelloWorld.app/www/index.html
+Terminating in response to SpringBoard's termination.
+objc[13905]: Class AXEmojiUtilities is implemented in both /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/PrivateFrameworks/AccessibilityUtilities.framework/AccessibilityUtilities and /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/libAXSpeechManager.dylib. One of the two will be used. Which one is undefined.
+2014-08-10 09:46:51.989 HelloWorld[13905:70b] Cannot find executable for CFBundle 0xa3764e0 </Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/AccessibilityBundles/GeoServices.axbundle> (not loaded)
+2014-08-10 09:46:52.002 HelloWorld[13905:70b] Cannot find executable for CFBundle 0xa2ab720 </Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/AccessibilityBundles/CertUIFramework.axbundle> (not loaded)
+2014-08-10 09:46:52.038 HelloWorld[13905:70b] Multi-tasking -> Device: YES, App: YES
+2014-08-10 09:46:52.047 HelloWorld[13905:70b] Unlimited access to network resources
+2014-08-10 09:46:52.076 HelloWorld[13905:70b] 
+
+Started backup to iCloud! Please be careful.
+Your application might rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines"
+You could find it at the following address https://developer.apple.com/icloud/documentation/data-storage/ .
+
+2014-08-10 09:46:52.250 HelloWorld[13905:70b] Resetting plugins due to page load.
+2014-08-10 09:46:52.301 HelloWorld[13905:70b] Finished load of: file:///Users/Edu/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/ECA8BCE1-9817-42B7-B904-4C28C36F1D7D/HelloWorld.app/www/index.html
+objc[14210]: Class AXEmojiUtilities is implemented in both /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/PrivateFrameworks/AccessibilityUtilities.framework/AccessibilityUtilities and /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/libAXSpeechManager.dylib. One of the two will be used. Which one is undefined.
+2014-08-10 09:50:57.877 HelloWorld[14210:70b] Cannot find executable for CFBundle 0xa78b350 </Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/AccessibilityBundles/GeoServices.axbundle> (not loaded)
+2014-08-10 09:50:57.881 HelloWorld[14210:70b] Cannot find executable for CFBundle 0xa2627c0 </Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/AccessibilityBundles/CertUIFramework.axbundle> (not loaded)
+2014-08-10 09:50:57.902 HelloWorld[14210:70b] Multi-tasking -> Device: YES, App: YES
+2014-08-10 09:50:57.908 HelloWorld[14210:70b] Unlimited access to network resources
+2014-08-10 09:50:57.910 HelloWorld[14210:70b] 
+
+Started backup to iCloud! Please be careful.
+Your application might rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines"
+You could find it at the following address https://developer.apple.com/icloud/documentation/data-storage/ .
+
+2014-08-10 09:50:57.960 HelloWorld[14210:70b] Resetting plugins due to page load.
+2014-08-10 09:50:57.991 HelloWorld[14210:70b] Finished load of: file:///Users/Edu/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/ECA8BCE1-9817-42B7-B904-4C28C36F1D7D/HelloWorld.app/www/index.html
+objc[14515]: Class AXEmojiUtilities is implemented in both /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/PrivateFrameworks/AccessibilityUtilities.framework/AccessibilityUtilities and /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/libAXSpeechManager.dylib. One of the two will be used. Which one is undefined.
+2014-08-10 09:54:10.822 HelloWorld[14515:70b] Cannot find executable for CFBundle 0xa36cc30 </Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/AccessibilityBundles/GeoServices.axbundle> (not loaded)
+2014-08-10 09:54:10.826 HelloWorld[14515:70b] Cannot find executable for CFBundle 0xa252c70 </Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/AccessibilityBundles/CertUIFramework.axbundle> (not loaded)
+2014-08-10 09:54:10.846 HelloWorld[14515:70b] Multi-tasking -> Device: YES, App: YES
+2014-08-10 09:54:10.852 HelloWorld[14515:70b] Unlimited access to network resources
+2014-08-10 09:54:10.854 HelloWorld[14515:70b] 
+
+Started backup to iCloud! Please be careful.
+Your application might rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines"
+You could find it at the following address https://developer.apple.com/icloud/documentation/data-storage/ .
+
+2014-08-10 09:54:10.904 HelloWorld[14515:70b] Resetting plugins due to page load.
+2014-08-10 09:54:10.934 HelloWorld[14515:70b] Finished load of: file:///Users/Edu/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/ECA8BCE1-9817-42B7-B904-4C28C36F1D7D/HelloWorld.app/www/index.html
+objc[14813]: Class AXEmojiUtilities is implemented in both /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/PrivateFrameworks/AccessibilityUtilities.framework/AccessibilityUtilities and /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/libAXSpeechManager.dylib. One of the two will be used. Which one is undefined.
+2014-08-10 09:55:25.126 HelloWorld[14813:70b] Cannot find executable for CFBundle 0xa3a4c00 </Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/AccessibilityBundles/GeoServices.axbundle> (not loaded)
+2014-08-10 09:55:25.131 HelloWorld[14813:70b] Cannot find executable for CFBundle 0xa7b03a0 </Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/AccessibilityBundles/CertUIFramework.axbundle> (not loaded)
+2014-08-10 09:55:25.150 HelloWorld[14813:70b] Multi-tasking -> Device: YES, App: YES
+2014-08-10 09:55:25.156 HelloWorld[14813:70b] Unlimited access to network resources
+2014-08-10 09:55:25.159 HelloWorld[14813:70b] 
+
+Started backup to iCloud! Please be careful.
+Your application might rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines"
+You could find it at the following address https://developer.apple.com/icloud/documentation/data-storage/ .
+
+2014-08-10 09:55:25.209 HelloWorld[14813:70b] Resetting plugins due to page load.
+2014-08-10 09:55:25.240 HelloWorld[14813:70b] Finished load of: file:///Users/Edu/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/ECA8BCE1-9817-42B7-B904-4C28C36F1D7D/HelloWorld.app/www/index.html
+objc[15113]: Class AXEmojiUtilities is implemented in both /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/PrivateFrameworks/AccessibilityUtilities.framework/AccessibilityUtilities and /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/libAXSpeechManager.dylib. One of the two will be used. Which one is undefined.
+2014-08-10 09:58:07.323 HelloWorld[15113:70b] Cannot find executable for CFBundle 0xa5b5590 </Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/AccessibilityBundles/GeoServices.axbundle> (not loaded)
+2014-08-10 09:58:07.328 HelloWorld[15113:70b] Cannot find executable for CFBundle 0xa2c5860 </Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/AccessibilityBundles/CertUIFramework.axbundle> (not loaded)
+2014-08-10 09:58:07.349 HelloWorld[15113:70b] Multi-tasking -> Device: YES, App: YES
+2014-08-10 09:58:07.355 HelloWorld[15113:70b] Unlimited access to network resources
+2014-08-10 09:58:07.357 HelloWorld[15113:70b] 
+
+Started backup to iCloud! Please be careful.
+Your application might rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines"
+You could find it at the following address https://developer.apple.com/icloud/documentation/data-storage/ .
+
+2014-08-10 09:58:07.407 HelloWorld[15113:70b] Resetting plugins due to page load.
+2014-08-10 09:58:07.438 HelloWorld[15113:70b] Finished load of: file:///Users/Edu/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/ECA8BCE1-9817-42B7-B904-4C28C36F1D7D/HelloWorld.app/www/index.html
+objc[15408]: Class AXEmojiUtilities is implemented in both /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/PrivateFrameworks/AccessibilityUtilities.framework/AccessibilityUtilities and /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/libAXSpeechManager.dylib. One of the two will be used. Which one is undefined.
+2014-08-10 09:58:42.440 HelloWorld[15408:70b] Cannot find executable for CFBundle 0xb888a90 </Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/AccessibilityBundles/CertUIFramework.axbundle> (not loaded)
+2014-08-10 09:58:42.444 HelloWorld[15408:70b] Cannot find executable for CFBundle 0xa638170 </Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/AccessibilityBundles/GeoServices.axbundle> (not loaded)
+2014-08-10 09:58:42.463 HelloWorld[15408:70b] Multi-tasking -> Device: YES, App: YES
+2014-08-10 09:58:42.469 HelloWorld[15408:70b] Unlimited access to network resources
+2014-08-10 09:58:42.471 HelloWorld[15408:70b] 
+
+Started backup to iCloud! Please be careful.
+Your application might rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines"
+You could find it at the following address https://developer.apple.com/icloud/documentation/data-storage/ .
+
+2014-08-10 09:58:42.521 HelloWorld[15408:70b] Resetting plugins due to page load.
+2014-08-10 09:58:42.553 HelloWorld[15408:70b] Finished load of: file:///Users/Edu/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/ECA8BCE1-9817-42B7-B904-4C28C36F1D7D/HelloWorld.app/www/index.html
+objc[15708]: Class AXEmojiUtilities is implemented in both /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/PrivateFrameworks/AccessibilityUtilities.framework/AccessibilityUtilities and /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/libAXSpeechManager.dylib. One of the two will be used. Which one is undefined.
+2014-08-10 10:02:00.067 HelloWorld[15708:70b] Cannot find executable for CFBundle 0xa335de0 </Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/AccessibilityBundles/GeoServices.axbundle> (not loaded)
+2014-08-10 10:02:00.072 HelloWorld[15708:70b] Cannot find executable for CFBundle 0xa55fba0 </Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/AccessibilityBundles/CertUIFramework.axbundle> (not loaded)
+2014-08-10 10:02:00.093 HelloWorld[15708:70b] Multi-tasking -> Device: YES, App: YES
+2014-08-10 10:02:00.098 HelloWorld[15708:70b] Unlimited access to network resources
+2014-08-10 10:02:00.100 HelloWorld[15708:70b] 
+
+Started backup to iCloud! Please be careful.
+Your application might rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines"
+You could find it at the following address https://developer.apple.com/icloud/documentation/data-storage/ .
+
+2014-08-10 10:02:00.150 HelloWorld[15708:70b] Resetting plugins due to page load.
+2014-08-10 10:02:00.181 HelloWorld[15708:70b] Finished load of: file:///Users/Edu/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/ECA8BCE1-9817-42B7-B904-4C28C36F1D7D/HelloWorld.app/www/index.html
+objc[16006]: Class AXEmojiUtilities is implemented in both /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/PrivateFrameworks/AccessibilityUtilities.framework/AccessibilityUtilities and /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/libAXSpeechManager.dylib. One of the two will be used. Which one is undefined.
+2014-08-10 10:03:25.572 HelloWorld[16006:70b] Cannot find executable for CFBundle 0xc19def0 </Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/AccessibilityBundles/GeoServices.axbundle> (not loaded)
+2014-08-10 10:03:25.577 HelloWorld[16006:70b] Cannot find executable for CFBundle 0xc1bcc90 </Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/AccessibilityBundles/CertUIFramework.axbundle> (not loaded)
+2014-08-10 10:03:25.597 HelloWorld[16006:70b] Multi-tasking -> Device: YES, App: YES
+2014-08-10 10:03:25.603 HelloWorld[16006:70b] Unlimited access to network resources
+2014-08-10 10:03:25.605 HelloWorld[16006:70b] 
+
+Started backup to iCloud! Please be careful.
+Your application might rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines"
+You could find it at the following address https://developer.apple.com/icloud/documentation/data-storage/ .
+
+2014-08-10 10:03:25.654 HelloWorld[16006:70b] Resetting plugins due to page load.
+2014-08-10 10:03:25.685 HelloWorld[16006:70b] Finished load of: file:///Users/Edu/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/ECA8BCE1-9817-42B7-B904-4C28C36F1D7D/HelloWorld.app/www/index.html
+objc[16302]: Class AXEmojiUtilities is implemented in both /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/PrivateFrameworks/AccessibilityUtilities.framework/AccessibilityUtilities and /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/libAXSpeechManager.dylib. One of the two will be used. Which one is undefined.
+2014-08-10 10:04:11.628 HelloWorld[16302:70b] Cannot find executable for CFBundle 0xbab8310 </Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/AccessibilityBundles/CertUIFramework.axbundle> (not loaded)
+2014-08-10 10:04:11.632 HelloWorld[16302:70b] Cannot find executable for CFBundle 0xa2a9a90 </Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/AccessibilityBundles/GeoServices.axbundle> (not loaded)
+2014-08-10 10:04:11.652 HelloWorld[16302:70b] Multi-tasking -> Device: YES, App: YES
+2014-08-10 10:04:11.657 HelloWorld[16302:70b] Unlimited access to network resources
+2014-08-10 10:04:11.660 HelloWorld[16302:70b] 
+
+Started backup to iCloud! Please be careful.
+Your application might rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines"
+You could find it at the following address https://developer.apple.com/icloud/documentation/data-storage/ .
+
+2014-08-10 10:04:11.709 HelloWorld[16302:70b] Resetting plugins due to page load.
+2014-08-10 10:04:11.739 HelloWorld[16302:70b] Finished load of: file:///Users/Edu/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/ECA8BCE1-9817-42B7-B904-4C28C36F1D7D/HelloWorld.app/www/index.html
+objc[16626]: Class AXEmojiUtilities is implemented in both /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/PrivateFrameworks/AccessibilityUtilities.framework/AccessibilityUtilities and /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/libAXSpeechManager.dylib. One of the two will be used. Which one is undefined.
+2014-08-10 10:23:36.273 HelloWorld[16626:70b] Cannot find executable for CFBundle 0xa4492b0 </Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/AccessibilityBundles/GeoServices.axbundle> (not loaded)
+2014-08-10 10:23:36.279 HelloWorld[16626:70b] Cannot find executable for CFBundle 0xa4834f0 </Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/AccessibilityBundles/CertUIFramework.axbundle> (not loaded)
+2014-08-10 10:23:36.340 HelloWorld[16626:70b] Multi-tasking -> Device: YES, App: YES
+2014-08-10 10:23:36.346 HelloWorld[16626:70b] Unlimited access to network resources
+2014-08-10 10:23:36.348 HelloWorld[16626:70b] 
+
+Started backup to iCloud! Please be careful.
+Your application might rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines"
+You could find it at the following address https://developer.apple.com/icloud/documentation/data-storage/ .
+
+2014-08-10 10:23:36.478 HelloWorld[16626:70b] Resetting plugins due to page load.
+2014-08-10 10:23:36.521 HelloWorld[16626:70b] Finished load of: file:///Users/Edu/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/ECA8BCE1-9817-42B7-B904-4C28C36F1D7D/HelloWorld.app/www/index.html
+objc[16928]: Class AXEmojiUtilities is implemented in both /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/PrivateFrameworks/AccessibilityUtilities.framework/AccessibilityUtilities and /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/libAXSpeechManager.dylib. One of the two will be used. Which one is undefined.
+2014-08-10 10:26:33.817 HelloWorld[16928:70b] Cannot find executable for CFBundle 0xc187e80 </Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/AccessibilityBundles/CertUIFramework.axbundle> (not loaded)
+2014-08-10 10:26:33.823 HelloWorld[16928:70b] Cannot find executable for CFBundle 0xc1a27e0 </Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/AccessibilityBundles/GeoServices.axbundle> (not loaded)
+2014-08-10 10:26:33.884 HelloWorld[16928:70b] Multi-tasking -> Device: YES, App: YES
+2014-08-10 10:26:33.889 HelloWorld[16928:70b] Unlimited access to network resources
+2014-08-10 10:26:33.892 HelloWorld[16928:70b] 
+
+Started backup to iCloud! Please be careful.
+Your application might rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines"
+You could find it at the following address https://developer.apple.com/icloud/documentation/data-storage/ .
+
+2014-08-10 10:26:34.032 HelloWorld[16928:70b] Resetting plugins due to page load.
+2014-08-10 10:26:34.073 HelloWorld[16928:70b] Finished load of: file:///Users/Edu/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/ECA8BCE1-9817-42B7-B904-4C28C36F1D7D/HelloWorld.app/www/index.html
+objc[17235]: Class AXEmojiUtilities is implemented in both /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/PrivateFrameworks/AccessibilityUtilities.framework/AccessibilityUtilities and /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/libAXSpeechManager.dylib. One of the two will be used. Which one is undefined.
+2014-08-10 10:32:43.408 HelloWorld[17235:70b] Cannot find executable for CFBundle 0xda207f0 </Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/AccessibilityBundles/CertUIFramework.axbundle> (not loaded)
+2014-08-10 10:32:43.413 HelloWorld[17235:70b] Cannot find executable for CFBundle 0xa573150 </Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/AccessibilityBundles/GeoServices.axbundle> (not loaded)
+2014-08-10 10:32:43.483 HelloWorld[17235:70b] Multi-tasking -> Device: YES, App: YES
+2014-08-10 10:32:43.488 HelloWorld[17235:70b] Unlimited access to network resources
+2014-08-10 10:32:43.491 HelloWorld[17235:70b] 
+
+Started backup to iCloud! Please be careful.
+Your application might rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines"
+You could find it at the following address https://developer.apple.com/icloud/documentation/data-storage/ .
+
+2014-08-10 10:32:43.637 HelloWorld[17235:70b] Resetting plugins due to page load.
+2014-08-10 10:32:43.683 HelloWorld[17235:70b] Finished load of: file:///Users/Edu/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/ECA8BCE1-9817-42B7-B904-4C28C36F1D7D/HelloWorld.app/www/index.html
+objc[17537]: Class AXEmojiUtilities is implemented in both /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/PrivateFrameworks/AccessibilityUtilities.framework/AccessibilityUtilities and /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/libAXSpeechManager.dylib. One of the two will be used. Which one is undefined.
+2014-08-10 10:35:50.120 HelloWorld[17537:70b] Cannot find executable for CFBundle 0xd1b1280 </Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/AccessibilityBundles/CertUIFramework.axbundle> (not loaded)
+2014-08-10 10:35:50.124 HelloWorld[17537:70b] Cannot find executable for CFBundle 0xa2bc510 </Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/AccessibilityBundles/GeoServices.axbundle> (not loaded)
+2014-08-10 10:35:50.183 HelloWorld[17537:70b] Multi-tasking -> Device: YES, App: YES
+2014-08-10 10:35:50.188 HelloWorld[17537:70b] Unlimited access to network resources
+2014-08-10 10:35:50.193 HelloWorld[17537:70b] 
+
+Started backup to iCloud! Please be careful.
+Your application might rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines"
+You could find it at the following address https://developer.apple.com/icloud/documentation/data-storage/ .
+
+2014-08-10 10:35:50.322 HelloWorld[17537:70b] Resetting plugins due to page load.
+2014-08-10 10:35:50.367 HelloWorld[17537:70b] Finished load of: file:///Users/Edu/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/ECA8BCE1-9817-42B7-B904-4C28C36F1D7D/HelloWorld.app/www/index.html
+objc[17840]: Class AXEmojiUtilities is implemented in both /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/PrivateFrameworks/AccessibilityUtilities.framework/AccessibilityUtilities and /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/libAXSpeechManager.dylib. One of the two will be used. Which one is undefined.
+2014-08-10 10:39:49.279 HelloWorld[17840:70b] Cannot find executable for CFBundle 0xa2638a0 </Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/AccessibilityBundles/GeoServices.axbundle> (not loaded)
+2014-08-10 10:39:49.284 HelloWorld[17840:70b] Cannot find executable for CFBundle 0xa45da60 </Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/AccessibilityBundles/CertUIFramework.axbundle> (not loaded)
+2014-08-10 10:39:49.350 HelloWorld[17840:70b] Multi-tasking -> Device: YES, App: YES
+2014-08-10 10:39:49.356 HelloWorld[17840:70b] Unlimited access to network resources
+2014-08-10 10:39:49.358 HelloWorld[17840:70b] 
+
+Started backup to iCloud! Please be careful.
+Your application might rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines"
+You could find it at the following address https://developer.apple.com/icloud/documentation/data-storage/ .
+
+2014-08-10 10:39:49.491 HelloWorld[17840:70b] Resetting plugins due to page load.
+2014-08-10 10:39:49.533 HelloWorld[17840:70b] Finished load of: file:///Users/Edu/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/ECA8BCE1-9817-42B7-B904-4C28C36F1D7D/HelloWorld.app/www/index.html
+objc[18150]: Class AXEmojiUtilities is implemented in both /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/PrivateFrameworks/AccessibilityUtilities.framework/AccessibilityUtilities and /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/libAXSpeechManager.dylib. One of the two will be used. Which one is undefined.
+2014-08-10 10:44:50.575 HelloWorld[18150:70b] Cannot find executable for CFBundle 0xb93a9f0 </Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/AccessibilityBundles/CertUIFramework.axbundle> (not loaded)
+2014-08-10 10:44:50.579 HelloWorld[18150:70b] Cannot find executable for CFBundle 0xb955930 </Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/AccessibilityBundles/GeoServices.axbundle> (not loaded)
+2014-08-10 10:44:50.642 HelloWorld[18150:70b] Multi-tasking -> Device: YES, App: YES
+2014-08-10 10:44:50.648 HelloWorld[18150:70b] Unlimited access to network resources
+2014-08-10 10:44:50.650 HelloWorld[18150:70b] 
+
+Started backup to iCloud! Please be careful.
+Your application might rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines"
+You could find it at the following address https://developer.apple.com/icloud/documentation/data-storage/ .
+
+2014-08-10 10:44:50.788 HelloWorld[18150:70b] Resetting plugins due to page load.
+2014-08-10 10:44:50.830 HelloWorld[18150:70b] Finished load of: file:///Users/Edu/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/ECA8BCE1-9817-42B7-B904-4C28C36F1D7D/HelloWorld.app/www/index.html
+objc[18452]: Class AXEmojiUtilities is implemented in both /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/PrivateFrameworks/AccessibilityUtilities.framework/AccessibilityUtilities and /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/libAXSpeechManager.dylib. One of the two will be used. Which one is undefined.
+2014-08-10 10:46:11.499 HelloWorld[18452:70b] Cannot find executable for CFBundle 0xa532dd0 </Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/AccessibilityBundles/CertUIFramework.axbundle> (not loaded)
+2014-08-10 10:46:11.506 HelloWorld[18452:70b] Cannot find executable for CFBundle 0xa31cbc0 </Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/AccessibilityBundles/GeoServices.axbundle> (not loaded)
+2014-08-10 10:46:11.538 HelloWorld[18452:70b] Multi-tasking -> Device: YES, App: YES
+2014-08-10 10:46:11.548 HelloWorld[18452:70b] Unlimited access to network resources
+2014-08-10 10:46:11.551 HelloWorld[18452:70b] 
+
+Started backup to iCloud! Please be careful.
+Your application might rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines"
+You could find it at the following address https://developer.apple.com/icloud/documentation/data-storage/ .
+
+2014-08-10 10:46:11.625 HelloWorld[18452:70b] Resetting plugins due to page load.
+2014-08-10 10:46:11.661 HelloWorld[18452:70b] Finished load of: file:///Users/Edu/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/ECA8BCE1-9817-42B7-B904-4C28C36F1D7D/HelloWorld.app/www/index.html
+objc[19053]: Class AXEmojiUtilities is implemented in both /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/PrivateFrameworks/AccessibilityUtilities.framework/AccessibilityUtilities and /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/libAXSpeechManager.dylib. One of the two will be used. Which one is undefined.
+2014-08-10 13:22:41.857 HelloWorld[19053:70b] Cannot find executable for CFBundle 0xa48efd0 </Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/AccessibilityBundles/GeoServices.axbundle> (not loaded)
+2014-08-10 13:22:41.865 HelloWorld[19053:70b] Cannot find executable for CFBundle 0xa2966b0 </Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/AccessibilityBundles/CertUIFramework.axbundle> (not loaded)
+2014-08-10 13:22:41.927 HelloWorld[19053:70b] Multi-tasking -> Device: YES, App: YES
+2014-08-10 13:22:41.933 HelloWorld[19053:70b] Unlimited access to network resources
+2014-08-10 13:22:41.937 HelloWorld[19053:70b] 
+
+Started backup to iCloud! Please be careful.
+Your application might rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines"
+You could find it at the following address https://developer.apple.com/icloud/documentation/data-storage/ .
+
+2014-08-10 13:22:42.059 HelloWorld[19053:70b] Resetting plugins due to page load.
+2014-08-10 13:22:42.096 HelloWorld[19053:70b] Finished load of: file:///Users/Edu/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/ECA8BCE1-9817-42B7-B904-4C28C36F1D7D/HelloWorld.app/www/index.html
+objc[19369]: Class AXEmojiUtilities is implemented in both /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/PrivateFrameworks/AccessibilityUtilities.framework/AccessibilityUtilities and /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/libAXSpeechManager.dylib. One of the two will be used. Which one is undefined.
+2014-08-10 13:34:00.752 HelloWorld[19369:70b] Cannot find executable for CFBundle 0xa542060 </Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/AccessibilityBundles/GeoServices.axbundle> (not loaded)
+2014-08-10 13:34:00.759 HelloWorld[19369:70b] Cannot find executable for CFBundle 0xa3a3880 </Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/AccessibilityBundles/CertUIFramework.axbundle> (not loaded)
+2014-08-10 13:34:00.826 HelloWorld[19369:70b] Multi-tasking -> Device: YES, App: YES
+2014-08-10 13:34:00.832 HelloWorld[19369:70b] Unlimited access to network resources
+2014-08-10 13:34:00.834 HelloWorld[19369:70b] 
+
+Started backup to iCloud! Please be careful.
+Your application might rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines"
+You could find it at the following address https://developer.apple.com/icloud/documentation/data-storage/ .
+
+2014-08-10 13:34:00.988 HelloWorld[19369:70b] Resetting plugins due to page load.
+2014-08-10 13:34:01.028 HelloWorld[19369:70b] Finished load of: file:///Users/Edu/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/ECA8BCE1-9817-42B7-B904-4C28C36F1D7D/HelloWorld.app/www/index.html
