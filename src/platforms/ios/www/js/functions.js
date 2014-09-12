@@ -1,7 +1,7 @@
 /* Este javascript debe ir antes de los demás para que tenga las funciones cargadas en memoria
  */
 
-
+/*
 // Función para añadir clases css a elementos
 function addClass( classname, element ) {
     var cn = element.className;
@@ -21,6 +21,8 @@ function removeClass( classname, element ) {
     cn = cn.replace( rxp, '' );
     element.className = cn;
 }
+ 
+*/
 
 function menu(opcion)
 {
@@ -112,7 +114,7 @@ req.setRequestHeader("Authorization", "Basic " + btoa(user + ":" + password));
 //Se manda la petición del recurso a través del objeto req.
 req.send(null);
 
-    
+ 
  //   req.onreadystatechange = function (){
 //Si activas el modo síncrono cuando genera el menu de los botones aun no ha recibido variables y lo deja vacío
    
@@ -141,8 +143,10 @@ function loadPlano (idinput){
         //Lee el archivo como URL, es decir, extrae la rurta.
         lector.readAsDataURL(plano);
         lector.onloadend = function(){
-            //Creamos el lienzo sobre el cual se dibujará la imagen.
-            cuerpo.innerHTML='<div id="wrapper"> <div id="scroller"><canvas id="micanvas" width="1200" height="1200" > You browser doesnt support canvas </canvas> </div></div>';
+            
+
+            //Creamos el div sobre el cual se dibujará la imagen.
+            cuerpo.innerHTML='<div id="wrapper"> <div id="scroller"><img id=miimagen src="'+lector.result+'"> </div></div>';
             
             //Aplicamos la librería iscroll-zoom sobre el código HTML creado
             myScroll = new IScroll('#wrapper', {
@@ -153,22 +157,7 @@ function loadPlano (idinput){
                                    wheelAction: 'zoom'
                                    });
             document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);
-            
-            var canvas = document.getElementById('micanvas');
-            
-            
-            var context = canvas.getContext('2d');
-            
-            //Instanciamos un objeto imagen al que introduciremos la ruta obtenida
-            var image = new Image();
-            image.src = lector.result;
-            //context.clearRect(0, 0, 640, 480);
-            //context.save();
-            context.drawImage(image, 0, 0);
-            context.save();
-            
-            
-            //cuerpo.innerHTML= '<img src="'+lector.result+' alt="100%" height=100%">';
+           
         }
         
         //En caso de no haber imagen.
@@ -181,26 +170,159 @@ function loadPlano (idinput){
 function createMenu(tx){
     
     d = ID("opciones");
-   
+    r = ID ("removes");
+    
+    
     var a = tx.split("\n");
 
     for (var i=0; i<a.length; i++) {
         b=a[i].split(":");
         if (a[i] != "DONE")
-            //OP tiene que devolver elementos option
+            //OP tiene que devolver elementos option que va añadiendo
             try {AC(d,OP(b[0],b[1].substring(0,2),b[2]));} catch(e){}
     }
+    
+   
 
-
-  
+  //Esta función crea una opción
     function OP (nom, tipo, valor){
         
         if (valor){
+            if (tipo == ("DI")|| tipo == ("DO")||tipo == ("AI") || tipo == ("AO") )
+            {
+            
             var no = CE("option");
             no.text = nom;
+            no.tipo = tipo;
             no.value = valor;
+            no.disabled = false;
             return no;
+            }
         }
+    }
+}
+
+//Función para añadir botón
+
+    function addbutton(){
+       imagen = ID("scroller");
+        
+        if (!ID(d.options[d.selectedIndex].text)){
+        switch (d.options[d.selectedIndex].tipo){
+                
+         case "DO":
+                if (d.options[d.selectedIndex].value == "ON") {
+                    object = CE('div','onswitch_o',d.options[d.selectedIndex].text);
+                    object.style.display = 'none';
+                    AC(imagen,object);
+                 }
+                else if (d.options[d.selectedIndex].value == "OFF"){
+                    object = CE('div','offswitch_o',d.options[d.selectedIndex].text);
+                    object.style.display = 'none';
+                    AC(imagen,object);
+                }break;
+                
+         case "DI":
+                if (d.options[d.selectedIndex].value == "ON") {
+                    object = CE('div','onswitch_i',d.options[d.selectedIndex].text);
+                    object.style.display = 'none';
+                    AC(imagen,object);
+                }
+                else if (d.options[d.selectedIndex].value == "OFF"){
+                    object = CE('div','offswitch_i',d.options[d.selectedIndex].text);
+                    object.style.display = 'none';
+                    AC(imagen,object);
+                }break;
+                
+         case "AO":
+              //  object = CE('div','analogswitch_o',d.options[d.selectedIndex].text);
+                 object = CE('div','onswitch_o',d.options[d.selectedIndex].text);
+                object.style.display = 'none';
+                AC(imagen,object);;
+                object.innerHTML = d.valor;
+                break;
+                
+         case "AI":
+            //    object = CE('input','analogswitch_i',d.options[d.selectedIndex].text);
+                 object = CE('input','onswitch_o',d.options[d.selectedIndex].text);
+                object.style.display = 'none';
+                AC(imagen,object);
+                object.innerHTML = d.valor;
+                break;
+        }
+        }
+        else {
+            object = ID(d.options[d.selectedIndex])
+            object.text.style.display = 'block';
+        
+        }
+        
+        
+        menu('derecha');
+        log("Hold your finger 2sec to place the button");
+       
+        imagen.addEventListener('touchstart', tapandhold, false);
+        imagen.addEventListener('touchstart', getMousePosition, false);
+        imagen.addEventListener('touchend', holding = function(){ hold = false; }, false);
+    
+    }
+    
+/*Función para eliminar botón*/
+
+function removebutton(){
+	
+        if (r.selectedIndex > -1){
+        var nom = r.options[r.selectedIndex].text;
+        ID(nom).style.display = 'none';
+        r.removeChild(r.options[r.selectedIndex]);
+        
+        //Funcion que busca el elemento que conteiene la referencia y lo vuelve a habilitar.
+        for (var i = 0; i < d.options.length; i++){
+            if( d.options[i].text == nom) {d.options[i].disabled = false;}}
+    
+ 
+        menu('derecha');
+        log("Removed!");
+        }
+		else { menu('derecha'); alert ("Select a valid value!");}
+	
+    }
+    
+//Función que calcula coordenadas del ratón (dentro de la capa scroller).
+    function getMousePosition(e){
+         coordenadaX = (-myScroll.x)+(e.layerX - pageXOffset);
+         coordenadaY = (-myScroll.y)+(e.layerY - pageYOffset);;
+        log(" CoordenadaX:"+coordenadaX+" CoordenadaY:"+coordenadaY);
+    }
+
+//Función que comprueba si ha sido mantenido durante mas de dos segundos y pinta el interruptor
+//la propiedad touches.length indica cuantos dedos se estan utilizando sino al hacer zoom saltaría
+
+function tapandhold(e){
+    if (e.touches.length == 1){hold = true;} else {hold = false;}
+	setTimeout (function(){if (hold == true){placeButton();} else {delete object;}},1800);
+}
+
+
+//Función que añade el botón
+    function placeButton(){
+       
+        //Al colocar el botón automáticamente se crea su entrada option para poder ser eliminado
+        
+        var no = d.options[d.selectedIndex].cloneNode(true);
+        d.options[d.selectedIndex].disabled = true;
+        
+        AC(r,no);
+        
+        object.style.left = coordenadaX+'px';
+        object.style.top = coordenadaY+'px';
+        object.style.display = 'block';
+        
+        //Se cancelan los disparadores de eventos y devuelve automáticamente al menú
+        imagen.removeEventListener('touchstart', tapandhold);
+        imagen.removeEventListener('touchstart', getMousePosition);
+        imagen.removeEventListener('touchend', holding);
+        
     }
 
 
@@ -208,9 +330,3 @@ function createMenu(tx){
 
 
 
-
-
-
-
-
-}

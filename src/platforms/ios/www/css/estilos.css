@@ -55,13 +55,12 @@ body > div {
    border-bottom: 10px solid #043E95;
    text-align: center;
 	}
-#cuerpo{
-	position:absolute;
-	top:50px; left:0;
-   width:100%;
-   height:100%;
-   text-align: center;
-	}
+#cuerpo{position: absolute;
+top: 50px;
+left: 0;
+width: 100%;
+height: 72%;
+text-align: center;}
     
 #loginbox{
     display: block;
@@ -116,13 +115,14 @@ a:link {color:black;}
 	bottom: 0px;
 	left: 0px;
 	width: 100%;
+	height: 100%;
 	background: #ccc;
 	overflow: hidden;
 }
 
 #scroller {
 	position: absolute;
-	z-index: 2;
+	z-index: 3;
 	-webkit-tap-highlight-color: rgba(0,0,0,0);
 	width: 1200px;
 	-webkit-transform: translateZ(0);
@@ -207,5 +207,60 @@ transform: translate3d(100%, 0, 0);
 transition-duration: .15s; 
 }
 
-	
+
+/* Estilo interruptor encendido */
+
+.onswitch_o {
+    background: url('../img/iPhoneSwitch.png') no-repeat -224px -39px;
+	width: 64px;
+	height: 23px;
+    position: absolute;
+    z-index:5;
+    
+}
+
+/* Estilo interruptor apagado */
+
+.offswitch_o{
+    
+    background: url('../img/iPhoneSwitch.png') no-repeat -225px -68px;
+	width: 60px;
+	height: 18px;
+    position: absolute;
+    z-index:5;
+    
+}
+
+
+/* Estilo sensor encendido */
+
+.onswitch_i{
+    
+    background: url('../img/light_bulbs_thumb.png') no-repeat -117px -66px;
+	width: 23px;
+	height: 39px;
+    position: absolute;
+    z-index:5;
+}
+
+/* Estilo sensor apagado */
+
+.offswitch_i{
+    
+    background: url('../img/light_bulbs_thumb.png') no-repeat -89px -66px;
+	width: 23px;
+	height: 39px;
+    position: absolute;
+    z-index:5;}
+
+/* Estilo salida analógica */
+
+.analogswitch_o{}
+
+
+/*Estilo entrada analógica*/
+
+.analogswitch_i{}
+
+
 	
