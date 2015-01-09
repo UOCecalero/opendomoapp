@@ -24,19 +24,37 @@ body > div {
 	background-color: #999999;
 	}
 
-#menu_lateral {
+#menu_lateral, #settings {
     background-color: grey;
 }
 
-#menu_lateral td {
+#menu_lateral td, #settings td {
     
     padding: 5px;
     background-color:white;
     }
 
-#menu_lateral nav, table {
-    width: 90%;
+#menu_lateral nav{
+    width:100%;
+}
+
+#menu_lateral nav table{
+    width: 85%;
     margin-left: 2%;
+    font-size: small;
+    
+}
+
+#menu_lateral th{
+    
+    align: center;
+
+}
+
+#settings nav table {
+    width: 100%;
+    margin-left: 15%;
+    font-size: x-small;
     
 }
 
@@ -55,12 +73,46 @@ body > div {
    border-bottom: 10px solid #043E95;
    text-align: center;
 	}
-#cuerpo{position: absolute;
-top: 50px;
-left: 0;
-width: 100%;
-height: 72%;
-text-align: center;}
+
+#cuerpo{
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    height: 75%;
+    text-align: center;
+}
+
+.classplano{
+    position: absolute;
+    top:0px; left:0;
+    width: 100%;
+    height: 100%;
+    
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+
+}
+
+
+.classplano.left {
+    -webkit-transform: translate3d(-200%, 0, 0);
+    transform: translate3d(-200%, 0, 0);
+}
+
+/* Estilo de capa central */
+
+.classplano.center {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+/* Estilo de capa derecha */
+
+.classplano.right {
+    -webkit-transform: translate3d(200%, 0, 0);
+    transform: translate3d(200%, 0, 0);
+}
     
 #loginbox{
     display: block;
@@ -108,8 +160,8 @@ a:link {color:black;}
 
 /* Estilos para iscroll-zoom*/
 
-#wrapper {
-	position: absolute;
+.wrapper {
+	position: inherit;
 	z-index: 1;
 	top: 0px;
 	bottom: 0px;
@@ -120,7 +172,7 @@ a:link {color:black;}
 	overflow: hidden;
 }
 
-#scroller {
+.scroller {
 	position: absolute;
 	z-index: 3;
 	-webkit-tap-highlight-color: rgba(0,0,0,0);
@@ -259,6 +311,7 @@ transition-duration: .15s;
     background-color: whitesmoke;
     width: 64px;
 	height: 23px;
+    word-wrap: break-word;
     position: absolute;
     z-index:5;
 }
@@ -268,8 +321,9 @@ transition-duration: .15s;
 
 .analogswitch_i{
     background-color: whitesmoke;
-    width: 64px;
-	height: 23px;
+    /*width: 64px;
+	height: 23px;*/
+    word-wrap: break-word;
     position: absolute;
     z-index:5;
 

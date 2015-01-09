@@ -1,37 +1,42 @@
 // Declaraciónn de variables globales
-var estado, menulateral, menuprincipal, settings, cargando, cuerpo;
+var estado, menulateral, menuprincipal, settings, cargando, cuerpo, pie, loginbox, botoniz, botonder;
 
 // Guardamos en variables elementos para poder rescatarlos después sin tener que volver a buscarlos
- menuprincipal = document.getElementById("menu_principal"),
- menulateral = document.getElementById("menu_lateral"),
- settings = document.getElementById("settings"),
- cargando = document.getElementById("cargando"),
- pie = document.getElementById ("pie");
-loginbox = document.getElementById("loginbox");
+
+ menuprincipal = ID("menu_principal"),
+ menulateral = ID("menu_lateral"),
+ settings = ID("settings"),
+ cargando = ID("cargando"),
+ pie = ID("pie"),
+ cuerpo = ID("cuerpo"),
+ loginbox = ID("loginbox"),
+ botoniz = GC("btniz")[0],
+ botonder = GC("btnder")[0];
+
+var user = "user";
+var password = "opendomo";
+var url = "http://local.opendomo.com/";
+var mapnumber = 0;
 
 
-// Función para añadir clases css a elementos
-function addClass( classname, element ) {
-    var cn = element.className;
-    if( cn.indexOf( classname ) != -1 ) {
-    	return;
-    }
-    if( cn != '' ) {
-    	classname = ' '+classname;
-    }
-    element.className = cn+classname;
+//Inicializamos la app
+var app = {
+initialize: function() {
+    this.bindEvents();
+},
+bindEvents: function() {
+    document.addEventListener('deviceready', this.onDeviceReady, false);
+},
+onDeviceReady: function() {
+    pictureSource=navigator.camera.PictureSourceType;
+    destinationType=navigator.camera.DestinationType;
 }
-
-// Función para eliminar clases css a elementos
-function removeClass( classname, element ) {
-    var cn = element.className;
-    var rxp = new RegExp( "\\s?\\b"+classname+"\\b", "g" );
-    cn = cn.replace( rxp, '' );
-    element.className = cn;
-}
+};
 
 
-window.onload = function() 
+
+
+window.onload = function()
 {
 	estado = "menuprincipal";
 	
@@ -41,134 +46,105 @@ window.onload = function()
 	settings.className = 'page center';
     cargando.className = 'page totalleft';
 	
+    /* Para no tener que introducir las credenciales una y otra vez:*/
+     var user = ID("user");
+     var password = ID("password");
+     var url = ID("url");
+     
+
+
 }
 
-	
-	function menu(opcion) 
-	{
-		
-	// Si pulsamos en el botón de "menu" entramos en el if
-	if(opcion=="derecha")
-	{
-		
-		if(estado=="menuprincipal")
-		{			
-			menuprincipal.className = 'page transition right';
-			settings.className = 'page transition right';			
-			estado="menulateral";
-			
-		} else if(estado=="menulateral")
-		{			
-			menuprincipal.className = 'page transition center';
-			settings.className = 'page transition center';
-			estado="menuprincipal";	
-		} 
+//Cargar imágenes
+function carrete()
+{
+    
 
-	// Si pulsamos el botón settings entramos en el elseif	
-	
-	} else if(opcion=="izquierda")
-	
-        {
-			if(estado=="menuprincipal")
-			{
-				menuprincipal.className = 'page transition left';
-				menulateral.className = 'page transition left';
-				estado="settings"
-				
-			} else if(estado=="settings")
-			{	
-				menuprincipal.className = 'page transition center'
-				menulateral.className = 'page transition center';
-				estado="menuprincipal";
-			}
-		
-	
-        }
-	
+ navigator.camera.getPicture(onSuccess, onFail, { quality: 90, destinationType: destinationType.FILE_URI, sourceType: Camera.PictureSourceType.PHOTOLIBRARY });
+   
 
-	
+}
+
+
+function onSuccess(imageURI) {
+ 
+    
+ if (!(ID("mapas"))){
+        
+        cuerpo.innerHTML='<div id="mapas"> </div>';
+        logar();
+ 
+ }
+ 
+        // Llama a la función que añade una planta
+        addMap(imageURI);
+ 
+ 
+        
+        //Aplicamos la librería iscroll-zoom sobre el código HTML creado
+        window["myScroll"+mapnumber] = new IScroll('#wrapper'+mapnumber, {
+                               zoom: true,
+                               scrollX: true,
+                               scrollY: true,
+                               mouseWheel: true,
+                               wheelAction: 'zoom'
+                               });
+        document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);
+    
+    
     }
-
+    
+    function onFail(message) {
+        log('Failed because: ' + message + imageURI);
+    }
 
 
 //Login
 
 function logar()
 {
-
+// Se muestra el gif de carga y en mensaje en la consola inferior
 cargando.className = 'page center';
-/* Para no tener que introducir las credenciales una y otra vez:
-var user = document.getElementById("user");
-var password = document.getElementById("password");
-var url = document.getElementById("url");
-*/
-var user = "user";
-var password = "opendomo";
-var url = "http://local.opendomo.com";
-
-pie.innerHTML ="sending credentials... "+" user: "+user+" password: "+password+" URL: "+url;
+log("sending credentials... "+" user: "+user+" password: "+password+" URL: "+url+" \n");
     
+//Se muestran los botones
+    botonder.style.display = "initial";
+    botoniz.style.display = "initial";
 
-
-
-
-var req = new XMLHttpRequest();
-
- 
-//true > asíncrono (continúa); false > síncrono (espera la respuesta);
-req.open("GET", url, false);
-    req.setRequestHeader("Access-Control-Allow-Origin", url);
-    req.setRequestHeader("Access-Control-Allow-Credentials", "true");
-    req.setRequestHeader("Authorization", "Basic " + btoa(user + ":" + password));
-req.send(null);
-pie.innerHTML =req.readyState+" "+req.status;
-loginbox.innerHTML = req.responseText;
-    alert(req.response);
- 
-/*
-
-
+//Hace una consulta lsc y a partir de la respuesta crea el menu de puertos.
     
+    response = REQ("lsc+");
+	
+    response.onreadystatechange = function (){
 
+    //Se muestra el resultado en la parte inferior de la pantalla
+    log(response.readyState+" "+response.statusText+" \n");
 
+if (response.readyState == 4){
     
-req.onreadystatechange = function() {
-
-
-    
-    if (req.readyState == 4 && req.status == 200)  {
-        //function showError (req.responseText);
-        //pie.innerHTML=req.responseText;
-        
-        pie.innerHTML = "Readystate finished and status OK!!"
-        pie.innerHTML =req.readyState+" "+req.status;
-        //pie.innerHTML=req.response;
-        return;
-        }
-    
-    else {
-
-        //Aqui hay que marcar el error
-        //function showError (req.responseText);
-        //function showError (req.responseText);
-        pie.innerHTML="Ha entrado en el ELSE";
-        return;
-        }
- 
-    }; */
-    
-
-    
-    //La respuesta será un XML que contendrá objetos que podremos mostrar o no por pantalla
-    //var response = req.responseXML;
-    
+    //Se retira el gif de carga
     cargando.className= 'page totalleft';
+    
 
+    if (response.status == 200)  {
+
+    createMenu(response.responseText);
+    response = REQ("ver+");
+	
+    log(response.responseText+" \n");
+
+	//Se carga el plano seleccionado pasando la id del input
+    //loadPlano("planos");
+
+
+
+            }
+
+        }
+    
+    }
 }
 
 
-
-
-	
 
 

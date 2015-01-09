@@ -17,27 +17,102 @@ body > div {
 	height: 100%;	
 	}
 
+#caja {top:15px;}
+
+
 #menu_principal {
 	background-color: #999999;
 	}
 
-#cabecera {
+#menu_lateral, #settings {
+    background-color: grey;
+}
+
+#menu_lateral td, #settings td {
+    
+    padding: 5px;
+    background-color:white;
+    }
+
+#menu_lateral nav{
+    width:100%;
+}
+
+#menu_lateral nav table{
+    width: 85%;
+    margin-left: 2%;
+    font-size: small;
+    
+}
+
+#menu_lateral th{
+    
+    align: center;
+
+}
+
+#settings nav table {
+    width: 100%;
+    margin-left: 15%;
+    font-size: x-small;
+    
+}
+
+#menu {
+    position:absolute;
+    top:50px;
+    left:0;
+    }
+
+.cabecera {
 	position:absolute;
-	top:0; left:0;	
+	top:0px; left:0;
 	background-color:white;
    width:100%;
    height: 40px;
    border-bottom: 10px solid #043E95;
    text-align: center;
 	}
-    
+
 #cuerpo{
-	position:absolute;
-	top:50px; left:0;
-   width:100%;
-   height:100%;
-   text-align: center;
-	}
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    height: 75%;
+    text-align: center;
+}
+
+.classplano{
+    position: absolute;
+    top:0px; left:0;
+    width: 100%;
+    height: 100%;
+    
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+
+}
+
+
+.classplano.left {
+    -webkit-transform: translate3d(-200%, 0, 0);
+    transform: translate3d(-200%, 0, 0);
+}
+
+/* Estilo de capa central */
+
+.classplano.center {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+/* Estilo de capa derecha */
+
+.classplano.right {
+    -webkit-transform: translate3d(200%, 0, 0);
+    transform: translate3d(200%, 0, 0);
+}
     
 #loginbox{
     display: block;
@@ -56,25 +131,69 @@ body > div {
 #pie{
     display: block;
     position: absolute;
-    z-index=3;
+    z-index : 2;
     border-top:2px solid #043E95;
     width:100%;
-    height: 10%;
-    top: 90%;
+    height: 100%;
+    top: 85%;
     background-color: white;
     }
 
 #cargando > div {
+    z-index: 4;
     position: absolute;
     top: 40%;
     left: 40%;
     }
 
 	
-.btniz { float: left; display:none; }
+.btniz { float: left; display: none;  }
 .btnder { float: right; display: none; }
 .btncnt { padding-left: 10px; }
+.btn{
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
 
+a:link {color:black;}
+
+/* Estilos para iscroll-zoom*/
+
+.wrapper {
+	position: inherit;
+	z-index: 1;
+	top: 0px;
+	bottom: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	background: #ccc;
+	overflow: hidden;
+}
+
+.scroller {
+	position: absolute;
+	z-index: 3;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+	width: 1200px;
+	-webkit-transform: translateZ(0);
+	-moz-transform: translateZ(0);
+	-ms-transform: translateZ(0);
+	-o-transform: translateZ(0);
+	transform: translateZ(0);
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	-webkit-text-size-adjust: none;
+	-moz-text-size-adjust: none;
+	-ms-text-size-adjust: none;
+	-o-text-size-adjust: none;
+	text-size-adjust: none;
+	background: #fff;
+}
 
 	
 /* Estilo de capa general */ 
@@ -140,5 +259,75 @@ transform: translate3d(100%, 0, 0);
 transition-duration: .15s; 
 }
 
-	
+
+/* Estilo interruptor encendido */
+
+.onswitch_o {
+    background: url('../img/iPhoneSwitch.png') no-repeat -224px -39px;
+	width: 64px;
+	height: 23px;
+    position: absolute;
+    z-index:5;
+    
+}
+
+/* Estilo interruptor apagado */
+
+.offswitch_o{
+    
+    background: url('../img/iPhoneSwitch.png') no-repeat -225px -68px;
+	width: 60px;
+	height: 18px;
+    position: absolute;
+    z-index:5;
+    
+}
+
+
+/* Estilo sensor encendido */
+
+.onswitch_i{
+    
+    background: url('../img/light_bulbs_thumb.png') no-repeat -117px -66px;
+	width: 23px;
+	height: 39px;
+    position: absolute;
+    z-index:5;
+}
+
+/* Estilo sensor apagado */
+
+.offswitch_i{
+    
+    background: url('../img/light_bulbs_thumb.png') no-repeat -89px -66px;
+	width: 23px;
+	height: 39px;
+    position: absolute;
+    z-index:5;}
+
+/* Estilo salida analógica */
+
+.analogswitch_o{
+    background-color: whitesmoke;
+    width: 64px;
+	height: 23px;
+    word-wrap: break-word;
+    position: absolute;
+    z-index:5;
+}
+
+
+/*Estilo entrada analógica*/
+
+.analogswitch_i{
+    background-color: whitesmoke;
+    /*width: 64px;
+	height: 23px;*/
+    word-wrap: break-word;
+    position: absolute;
+    z-index:5;
+
+}
+
+
 	

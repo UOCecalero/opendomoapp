@@ -1,2 +1,2 @@
-/home/edu/Escritorio/opendomo2/platforms/android/ant-build/AndroidManifest.xml : \
-/home/edu/Escritorio/opendomo2/platforms/android/AndroidManifest.xml \
+/Users/Edu/Documents/opendomo_app/platforms/android/ant-build/AndroidManifest.xml : \
+/Users/Edu/Documents/opendomo_app/platforms/android/AndroidManifest.xml \

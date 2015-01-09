@@ -3,17 +3,17 @@
 <!-- config.xml reference: https://build.phonegap.com/docs/config-xml -->
 <widget xmlns     = "http://www.w3.org/ns/widgets"
         xmlns:gap = "http://phonegap.com/ns/1.0"
-        id        = "com.phonegap.helloworld"
+        id        = "com.phonegap.opendomo"
         version   = "1.0.0">
 
-    <name>HelloWorld</name>
+    <name>Opendomo_app</name>
 
     <description>
-        Hello World sample application that responds to the deviceready event.
+        Opendomo_app lets you control remotely your opendomo device.
     </description>
 
-    <author href="http://phonegap.com" email="support@phonegap.com">
-        PhoneGap Team
+    <author email="educalerorovira@gmail.com">
+        Eduard Calero Rovira
     </author>
 
     <!--
@@ -21,7 +21,7 @@
         The "device" permission is required for the 'deviceready' event.
     -->
     <feature name="http://api.phonegap.com/1.0/device" />
-
+    
     <!--
         If you do not want any permissions to be added to your app, add the
         following tag to your config.xml; you will still have the INTERNET
@@ -50,8 +50,11 @@
     <!--
         <gap:plugin name="Example" />
         A list of available plugins are available at https://build.phonegap.com/docs/plugins
-    -->
-
+    
+     -->
+     <gap:plugin name="org.apache.cordova.camera" version="0.3.2" />
+ 
+    
     <!-- Define app icon for each platform. -->
     <icon src="icon.png" />
     <icon src="res/icon/android/icon-36-ldpi.png"   gap:platform="android"    gap:density="ldpi" />

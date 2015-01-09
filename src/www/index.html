@@ -25,107 +25,158 @@
         <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
         <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height" />
         <!--
-        <link rel="stylesheet" type="text/css" href="css/index.css" />
-        -->
+         <link rel="stylesheet" type="text/css" href="css/index.css" />
+         -->
         <link rel="stylesheet" type="text/css" href="css/estilos.css" />
         <title> Opendomo </title>
     </head>
     
     <body>
-       <div id="caja">
-    	
-        <div id="menu_lateral">
-    	  <header class="cabecera">MENU</header>
-          <nav id="menu">
-                   
+        <div id="caja">
+            
+            <div id="menu_lateral">
+                <header class="cabecera">MENU</header>
+                <nav id="menu">
+                    
                     <table>
-
+            
                         <tr>
-                        <td><select name="port" id="opciones"></select> </td>
-                        <td><input type="button" value="Add button" onclick= "addbutton()"></input></td>
+                            <th colspan="3">Manage ports</th>
                         </tr>
                         
                         <tr>
-                        <td><select name="port" id="removes"></select> </td>
-                        <td><input type="button" value="Remove button" onclick="removebutton()"></input></td>
+                            <td><select name="port" id="opciones"></select> </td>
+                            <td colspan="2"><input type="button" value="Add button" onclick= "addbutton()"></input></td>
                         </tr>
+                        
+                        <tr>
+                            <td><select name="port" id="removes"></select> </td>
+                            <td colspan="2"><input type="button" value="Remove button" onclick="removebutton()"></input></td>
+                        </tr>
+                        
+                        <tr>
+                            
+                            <th colspan="3">Add maps</th>
+                        
+                        </tr>
+                        
+                         <tr>
+                             <td colspan="3">
+                                 <input type="button" value="Search..." onclick="carrete()"> </p>
+                                 <!--<input type="button" value="Add" onclick='loadPlano("planos2")'></input>
+                                 <input type="file" value="Search..." id="planos2"> </p> <BR></td>
+                            </tr>-->
+                            
+                        </tr>
+                        
+                        
+                             <tr>
+                                 
+                                 <th colspan="3">Manage maps</th>
+                             
+                             </tr>
+                            
+                        <tr>
+                            <td><select name="port" id="mapas_sel"></select> </td>
+                            <td><input type="button" value="Show" onclick="switchMap()"></input></td>
+                            <td><input type="button" value="Delete" onclick="delMap()"></input></td>
+                        </tr>
+                        
                     </table>
-     
+                    
                 </nav>
-                 
-    	</div>
-    	
-    	<div id="settings">
+                
+            </div>
             
-        </div>
-        
-        
-    
-        <div id="menu_principal">
-            <header class="cabecera">
-                <div id="margen">
-                </div>
+            <div id="settings">
+                <header class="cabecera">SETTINGS</header>
+                <nav id="menu">
+                    
+                    <table> <form name="settings_form">
+                        <tr>
+                            <td> Refresh frequency </td>
+                            <td><input type="range" name="frecr" id="frecr" min="1" max="60" value="10"
+                                 onchange="setRefresh(this.value)" oninput="setRefresh(this.value)"> </input> </td> </tr>
+                        
+                            <tr> <td> Reload Device </td>
+                             <td> <input type="button" value="Reload" onclick="reloadDevice()"></input></td> </tr>
+                            
+                            
+                            
+                            
+                     
+                    </form> </table>
+                    
+                </nav>
+                    
+            </div>
+            
+            
+            
+            <div id="menu_principal">
+                <header class="cabecera">
+                    <div id="margen">
+                    </div>
 					<a href="javascript: menu('derecha');"><img class="btniz" src="img/botonmenu.png"  alt="menubtn" height="30" width="30"> </a>
 					<img class="btncnt"src="img/logoopen.png" alt="Opendomo"  height="30" width="150" >
-					<a href="javascript: menu('izquierda');"><img class="btnder"src="img/settings.png"  alt="settingsbtn" height="30" width="30"> </a>
-                 
-            </header>
-		
-        
-            <div id="cuerpo">
-				           
-            
+                        <a href="javascript: menu('izquierda');"><img class="btnder"src="img/settings.png"  alt="settingsbtn" height="30" width="30"> </a>
+                        
+                        </header>
+                
+                
+                <div id="cuerpo">
+                    
+                    
                     <section id="loginbox">
                         <form name="login_form">
                             
-                            <!-- Las varaibles user, password y URL se definen internamente de momento
-                            
-                            <!-- Falta acotar los input type para que solo acepten valores validos
-                            
-                            <p> User:
-                            <input type="text" name="user"  id="user" placeholder=" nombre de usuario "  required> </p> </BR>
-                                
-                            <p> Password:
-                            <input type="password" name="password" id="password" placeholder= "password" required> </p> <BR>
-                                
-                            <p> URL:
-                            <input type="text" name="url" id="url" required> </p> <BR> -->
+                            <!-- Las varaibles user, password y URL se definen internamente de momento -->
+                             
+                             
+                             <p> User:
+                             <input type="text" name="user"  id="user" placeholder=" nombre de usuario "  required> </p>
+                             
+                             <p> Password:
+                             <input type="password" name="password" id="password" placeholder= "password" required> </p>
+                             
+                             <p> URL:
+                             <input type="text" name="url" id="url" required> </p>
                             
                             
                             <p> Image:
-                            <input type="file" name="planos" id="planos"> </p> <BR>
+                            <input type="button" name="planos" value="Load & START" onclick="carrete()"> </p> 
                                 
-                            <p><input type="button" name="botonlogin"
-                                    value="Login" onclick="logar()"></p>
-                    
-                        </form>
+                            <!---<input type="file" name="planos" value="download" id="planos"> </p> <BR>
+                             
+                                <p><input type="button" name="botonlogin"
+                                    value="Login" onclick="logar()"> </p> -->
+                                    
+                         </form>
                     </section>
-            
-        </div>
-            <footer id="pie">
+                    
+                </div>
+                <footer id="pie">
+                    
+                </footer>
                 
-            </footer>
-    
-        </div>
-        
-        <div id="cargando">
-            
-            <div>
-                <img src="img/ajax-loader2.gif" alt="Barra de carga" height="60" width="60">
             </div>
             
+            <div id="cargando">
+                
+                <div>
+                    <img src="img/ajax-loader2.gif" alt="Barra de carga" height="60" width="60">
+                        </div>
+                
+            </div>
         </div>
-    </div>
-       
+        <script type="text/javascript" src="phonegap.js"></script>
         <script type="text/javascript" src="js/fastclick.js"></script>
         <script type="text/javascript" src="js/functions.js"></script>
         <script type="text/javascript" src="js/iscroll-zoom.js"></script>
+        <script type="text/javascript" src="js/zepto.min.js"></script>
+        <script type="text/javascript" src="js/range-touch.min.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
-       <!-- <script type="text/javascript">
+        <script type="text/javascript"> app.initialize(); </script>
         
-        <script type="text/javascript" src="phonegap.js"></script>
-        app.initialize();
-        </script> -->
-      
     </body>
 </html>
