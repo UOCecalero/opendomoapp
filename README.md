@@ -12,9 +12,9 @@ Testing
 
 Test the application with the following commands:
     
-  git clone https://github.com/UOCecalero/opendomoapp.git
-  cd opendomoapp/src/
-  cordova build ios
-  cordova run ios
+     git clone https://github.com/UOCecalero/opendomoapp.git
+     cd opendomoapp/src/
+     cordova build ios
+     cordova run ios
   
   
